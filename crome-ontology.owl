@@ -1,0 +1,658 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/stlab/crome/ontology/"
+     xml:base="https://w3id.org/stlab/crome/ontology/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#">
+    <owl:Ontology rdf:about="https://w3id.org/stlab/crome/ontology/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/age -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/age">
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Age"/>
+        <rdfs:label xml:lang="en">age</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/aggregatedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/aggregatedBy">
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/hasAffiliation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/hasAffiliation">
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Organisation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/hasCaseCategory -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/hasCaseCategory">
+        <rdfs:domain rdf:resource="https://w3id.org/stlab/crome/ontology/Case"/>
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/CaseCategory"/>
+        <rdfs:label xml:lang="en">has case category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/hasCaseType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/hasCaseType">
+        <rdfs:domain rdf:resource="https://w3id.org/stlab/crome/ontology/Case"/>
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/CaseType"/>
+        <rdfs:label xml:lang="en">has case type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/hasContent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/hasContent">
+        <rdfs:domain rdf:resource="https://w3id.org/stlab/crome/ontology/DiagnosisCollectionItem"/>
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Diagnosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/hasCountry -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/hasCountry">
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Country"/>
+        <rdfs:label xml:lang="en">has country</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/hasDiagnosisCollection -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/hasDiagnosisCollection">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/DiagnosisCollection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/hasGender -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/hasGender">
+        <rdfs:domain rdf:resource="https://w3id.org/stlab/crome/ontology/Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Gender"/>
+        <rdfs:label xml:lang="en">has gender</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/hasItem -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/hasItem">
+        <rdfs:domain rdf:resource="https://w3id.org/stlab/crome/ontology/DiagnosisCollection"/>
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/DiagnosisCollectionItem"/>
+        <rdfs:label xml:lang="en">has item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/hasPatient -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/hasPatient">
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Patient"/>
+        <rdfs:label xml:lang="en">has patient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/hasRole">
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Role"/>
+        <rdfs:label xml:lang="en">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/inputParameter -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/inputParameter">
+        <rdfs:domain rdf:resource="https://w3id.org/stlab/crome/ontology/ProcedureExecution"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="en">input parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/madeBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/madeBy">
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/obtainedFor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/obtainedFor">
+        <rdfs:domain rdf:resource="https://w3id.org/stlab/crome/ontology/CollectiveDiagnosis"/>
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Case"/>
+        <rdfs:label xml:lang="en">obtained for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/ofDisease -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/ofDisease">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Disease"/>
+        <rdfs:label xml:lang="en">of disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/resultsFrom -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/resultsFrom">
+        <rdfs:domain rdf:resource="https://w3id.org/stlab/crome/ontology/CollectiveDiagnosis"/>
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/ProcedureExecution"/>
+        <rdfs:label xml:lang="en">results from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/satisfies -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/satisfies">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="en">satisfies</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/specialty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/stlab/crome/ontology/specialty">
+        <rdfs:range rdf:resource="https://w3id.org/stlab/crome/ontology/Specialty"/>
+        <rdfs:label xml:lang="en">specialty</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/solutionPosition -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/stlab/crome/ontology/solutionPosition">
+        <rdfs:domain rdf:resource="https://w3id.org/stlab/crome/ontology/DiagnosisCollection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label>solution position</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/timeUnit -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/stlab/crome/ontology/timeUnit">
+        <rdfs:label>time unit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/value -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/stlab/crome/ontology/value">
+        <rdfs:label>value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent">
+        <owl:equivalentClass rdf:resource="https://w3id.org/stlab/crome/ontology/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Characteristic -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Characteristic"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Diagnosis">
+        <owl:equivalentClass rdf:resource="https://w3id.org/stlab/crome/ontology/Diagnosis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organization">
+        <owl:equivalentClass rdf:resource="https://w3id.org/stlab/crome/ontology/Organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Role">
+        <owl:equivalentClass rdf:resource="https://w3id.org/stlab/crome/ontology/Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Age -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Age">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/timeUnit"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Agent -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Agent">
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Case -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Case">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/hasCaseCategory"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/CaseCategory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/hasCaseType"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/CaseType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/hasDiagnosisCollection"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/DiagnosisCollection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/hasPatient"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/Patient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/CaseCategory -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/CaseCategory">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Characteristic"/>
+        <rdfs:label xml:lang="en">Case Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/CaseType -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/CaseType">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Characteristic"/>
+        <rdfs:label xml:lang="en">Case type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/CollectiveDiagnosis -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/CollectiveDiagnosis">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/stlab/crome/ontology/Diagnosis"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/resultsFrom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/ProcedureExecution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/obtainedFor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/stlab/crome/ontology/Case"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Collective diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Country -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Country">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Place"/>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/DiagnosingAgent -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/DiagnosingAgent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/stlab/crome/ontology/Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/hasAffiliation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/Organisation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/hasCountry"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/hasRole"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/specialty"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/Specialty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Diagnosing agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Diagnosis -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Diagnosis">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/madeBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/DiagnosingAgent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/ofDisease"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/DiagnosisCollection -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/DiagnosisCollection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/aggregatedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/DiagnosingAgent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/hasItem"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/DiagnosisCollectionItem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/solutionPosition"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Diagnosis collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/DiagnosisCollectionItem -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/DiagnosisCollectionItem">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/hasContent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/Diagnosis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Diagnosis collection item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Disease -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Disease">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/stlab/crome/ontology/Specialty"/>
+        <rdfs:label xml:lang="en">Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Gender -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Gender">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality"/>
+        <rdfs:label xml:lang="en">Gender</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Organisation -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Organisation">
+        <rdfs:label xml:lang="en">Organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Patient -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Patient">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/stlab/crome/ontology/Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/age"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/stlab/crome/ontology/Age"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/hasGender"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://w3id.org/stlab/crome/ontology/Gender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Procedure -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Procedure">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Plan"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/stlab/crome/ontology/ProcedureExecution"/>
+        <rdfs:label xml:lang="en">Procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/ProcedureExecution -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/ProcedureExecution">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PlanExecution"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/inputParameter"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/Case"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/stlab/crome/ontology/satisfies"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/stlab/crome/ontology/Procedure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Procedure execution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Role -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Role">
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/Specialty -->
+
+    <owl:Class rdf:about="https://w3id.org/stlab/crome/ontology/Specialty">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Concept"/>
+        <rdfs:label xml:lang="en">Specialty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/not-validated-case -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/crome/ontology/not-validated-case">
+        <rdf:type rdf:resource="https://w3id.org/stlab/crome/ontology/CaseType"/>
+        <rdfs:label xml:lang="en">Not validated case</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/crome/ontology/validated-case -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/crome/ontology/validated-case">
+        <rdf:type rdf:resource="https://w3id.org/stlab/crome/ontology/CaseType"/>
+        <rdfs:label xml:lang="en">Validated case</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
